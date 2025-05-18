@@ -24,5 +24,5 @@ kotlin {
 }
 
 application {
-mainClass.set("org.example.GetGithubCommitKt")
+    mainClass.set("org.example.MainKt")
 }
