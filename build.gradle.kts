@@ -12,6 +12,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    // https://mvnrepository.com/artifact/org.kohsuke/github-api
+    implementation("org.kohsuke:github-api:1.327")
 }
 
 tasks.test {
@@ -22,5 +24,5 @@ kotlin {
 }
 
 application {
-    mainClass.set("org.example.MainKt") // <-- ★★★ 請務必修改這一行，填入你正確的主類別 ★★★
+mainClass.set("org.example.GetGithubCommitKt")
 }
