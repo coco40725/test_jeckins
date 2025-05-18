@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.0.20"
+    application
 }
 
 group = "org.example"
@@ -18,4 +19,8 @@ tasks.test {
 }
 kotlin {
     jvmToolchain(21)
+}
+
+application {
+    mainClass.set("org.example.MainKt") // <-- ★★★ 請務必修改這一行，填入你正確的主類別 ★★★
 }
